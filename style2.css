@@ -1,0 +1,135 @@
+body{
+  height: 100vh;
+  font-family: Poppins;
+  color:white;
+  background-color: rgba(10, 173, 146, 0.779);
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*{ /* VI */
+  margin:0;
+  padding:0;
+}
+
+.container{
+  max-width: 350px;
+  width:100%;
+  background-color:white;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  padding-bottom: 25px;
+}
+.head{
+  background-color: rgba(3, 115, 96, 0.779);
+  border-radius:8px 8px 0 0;
+  width: 100%;
+  height:75px;
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.head span{
+  font-weight: 600;
+  font-size: 26px;
+}
+form{
+  padding:25px;
+  padding-bottom: 20px;
+}
+
+
+.email , .password{
+  display: flex;
+  align-items: center;
+  height:35px;
+  position:relative;
+}
+.email{
+  margin-bottom: 15px;
+}
+.email i , .password i{
+  width:35px;
+
+  position: absolute; /* VI */ 
+
+  height:100%;
+  background-color: rgba(3, 115, 96, 0.779);
+  /* border:1px solid rgba(3, 115, 96, 0.779); */
+  border-radius: 2px 0 0 2px;
+  font-size: 20px;
+
+
+  display:flex;
+  justify-content: center;
+  align-items: center; /* these 3 lines to center the logos */
+}
+.email input, .password input{
+  height:100%;
+  width:100%;
+  padding-left: 45px;
+  border:1px solid rgba(3, 115, 96, 0.779);
+  border-radius: 2px;
+  font-size: 15px;
+  transition:all 0.2s;
+
+  outline:none; /* VVI */ 
+}
+::placeholder{
+  color:rgb(163, 163, 163);
+}
+
+/* .email input::placeholder{
+  color:red; /* Works 
+} */
+
+.email input:focus, .password input:focus{ /* VVI */
+  border-color:rgba(12, 218, 183, 0.779);
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.forgetPass a{
+  font-size: 13px;
+  color:rgba(3, 115, 96, 0.779);
+  text-decoration: none;
+}
+.forgetPass a:hover , .signup a:hover{
+  text-decoration: underline;
+}
+.login{
+  margin-top: 15px;
+  height:35px;
+}
+.login button{
+  height: 100%;
+  width: 100%;
+  border:none;
+  color:white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 2px;
+  background-color: rgba(3, 115, 96, 0.779);
+  cursor: pointer;
+  transition:all 0.2s;
+}
+.login button:hover{
+  background-color: rgba(17, 88, 77, 0.779);
+}
+
+.signup{
+  color:black;
+  margin: 0 25px;
+  display:flex;
+  justify-content: center;
+  font-size:14px;
+}
+.signup a{
+  color: rgba(3, 115, 96, 0.779);
+  text-decoration: none;
+}
