@@ -1,0 +1,76 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+body{
+  height:100vh;
+
+  background: linear-gradient(to right,rgb(207, 19, 163),white 90%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  height:50px;
+  width: 60px;
+  max-width:400px;
+  border-radius: 30px;
+  display:flex;
+  align-items: center;
+  box-shadow: 0 5px 10px rgb(87, 87, 87);
+
+
+  position:relative;
+}
+.container input{
+  height:100%;
+  width:100%;
+  border:none;
+  outline:none;
+  border-radius: 30px;
+  font-size: 18px;
+  padding:25px;
+}
+.container label{
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  width:60px;
+  background-color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:30px;
+}
+.container label i{
+  color:rgb(246, 26, 220);
+  font-size:30px;
+  margin-top: 2px;
+}
+
+
+#check{
+  position: absolute;
+  top:0px;
+  left:0px;
+}
+#check:checked ~ .container{ /* when box is checked change container */
+  width:100%;
+}
+#check:checked ~ .container label{ /* when box is checked change label of container */
+  border-radius:0 30px 30px 0;
+  background-color: rgb(246, 26, 220);
+}
+#check:checked ~ .container label i{ /* similarly change i */
+  color:white;
+}
+.container{
+  transition: all 0.4s;
+}
+#check{
+  display: none;
+}
